@@ -11,7 +11,7 @@ class CalcTest {
 
     @Test
     void testShReturnCorrectValue() {
-        double result = testInstance.findSh(testValue);
+        double result = testInstance.findShA(testValue);
         double roundedResult = Math.round(result * 10) / 10.0d;
         double referenceResult = Math.sinh(testValue);
         double roundedReferenceResult = Math.round(referenceResult * 10) / 10.0d;
@@ -20,7 +20,7 @@ class CalcTest {
 
     @Test
     void testShResultDiffersInLessThanThirdElement() {
-        double result = testInstance.findSh(testValue);
+        double result = testInstance.findShA(testValue);
         double referenceResult = Math.sinh(testValue);
         double difference = result - referenceResult;
         assert (difference < 0.1);
@@ -28,7 +28,7 @@ class CalcTest {
 
     @Test
     void testShResultDiffersFromReferentResult() {
-        double result = testInstance.findSh(testValue);
+        double result = testInstance.findShA(testValue);
         double referenceResult = Math.sinh(testValue);
         assert (result != referenceResult);
     }

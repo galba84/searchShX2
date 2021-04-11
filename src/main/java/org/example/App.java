@@ -17,7 +17,7 @@ public class App implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception {
         Calc calc = new Calc();
-        double result = calc.findSh(Integer.parseInt(args[0]));
+        double result = calc.findShA(Integer.parseInt(args[0]));
         System.out.println(result);
     }
 }

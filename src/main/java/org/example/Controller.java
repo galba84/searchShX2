@@ -12,7 +12,7 @@ public class Controller {
     @GetMapping("/findSh")
     public Responce findSh(@RequestParam(value = "value", defaultValue = "0") String value) {
         Calc calc = new Calc();
-        double result = calc.findSh(Integer.parseInt(value));
+        double result = calc.findShA(Integer.parseInt(value));
         return new Responce( String.format(template, value, result));
     }
 }
